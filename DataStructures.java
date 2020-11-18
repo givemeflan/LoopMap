@@ -1,5 +1,5 @@
-public class DataStructures {
+// public class DataStructures {
 
-    public static void main(String[] args){ 
+// public static void main(String[] args){
 
-}
+// }
