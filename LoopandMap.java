@@ -11,25 +11,39 @@ public class LoopandMap {
         Scanner scan = new Scanner(System.in);
         System.out.println("Can you give me five numbers?");
 
+        // ParseInt-ing here because the numbers from the user will first come out as strings. 
         ArrayList<Integer> numArray = new ArrayList();
         int userNum;
-        for(int i = 0; i < numArray.size; i++){
+        for(int i = 0; i < numArray.size(); i++){
         userNum = Integer.parseInt(scan.nextLine()); 
             numArray.add(userNum);
         }
 
+        // Sorting numbers: largest to smallest 
         int max = Integer.MIN_VALUE;
-        for (int i = 0; i < numArray.size; i ++){
+        for (int i = 0; i < numArray.size(); i ++){
             if(numArray.get(i) > max){
                 max = numArray.get(i);
             }
-
+        // Sorting numbers: smallest to largest
             int min = Integer.MAX_VALUE;
-        for (int i = 0; i < numArray.size; i ++){
+        for (int i = 0; i < numArray.size(); i ++){
             if(numArray.get(i) < min){
                 min = numArray.get(i);
             }
 
+
+        // Finding the sum of the numbers
+            int sum = 0;
+            for (int i =0; i < numArray.size(); i++){
+                sum+= numArray.get(i);
+            }
+
+             // Finding the sum of the numbers
+             int product = 1;
+             for (int i =0; i < numArray.size(); i++){
+                 product*= numArray.get(i);
+             }
         }
 
 
