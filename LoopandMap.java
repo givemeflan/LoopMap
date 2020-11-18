@@ -39,7 +39,7 @@ public class LoopandMap {
                 sum+= numArray.get(i);
             }
 
-             // Finding the sum of the numbers
+             // Finding the product
              int product = 1;
              for (int i =0; i < numArray.size(); i++){
                  product*= numArray.get(i);
